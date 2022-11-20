@@ -1,7 +1,4 @@
-use std::borrow::Cow;
-use std::cmp::max;
-use std::fmt;
-use std::time::SystemTime;
+use std::{borrow::Cow, cmp::max, fmt, time::SystemTime};
 
 use chrono::{DateTime, Duration, TimeZone, Utc};
 
@@ -123,11 +120,11 @@ impl TimePeriod {
 pub struct HumanTime(Duration);
 
 impl HumanTime {
-    const DAYS_IN_YEAR: i64 = 365;
     const DAYS_IN_MONTH: i64 = 30;
+    const DAYS_IN_YEAR: i64 = 365;
 
     /// Create `HumanTime` object that corresponds to the current point in time.
-    ///. Similar to `chrono::Utc::now()`
+    /// . Similar to `chrono::Utc::now()`
     pub fn now() -> Self {
         Self(Duration::zero())
     }

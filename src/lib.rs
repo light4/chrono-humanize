@@ -35,7 +35,10 @@
 //! let ht = HumanTime::from(dt);
 //!
 //! assert_eq!("a month", ht.to_text_en(Accuracy::Rough, Tense::Present));
-//! assert_eq!("1 month, 2 weeks and 1 day", ht.to_text_en(Accuracy::Precise, Tense::Present));
+//! assert_eq!(
+//!     "1 month, 2 weeks and 1 day",
+//!     ht.to_text_en(Accuracy::Precise, Tense::Present)
+//! );
 //! # }
 //! ```
 
@@ -49,7 +52,7 @@
 #![warn(rust_2018_idioms)]
 #![warn(unused)]
 #![deny(warnings)]
-#![doc(html_root_url = "https://docs.rs/chrono-humanize/0.2.2")]
+#![doc(html_root_url = "https://docs.rs/chrono-humanize/")]
 
 pub use crate::humantime::{Accuracy, HumanTime, Tense};
 

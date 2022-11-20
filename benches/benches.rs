@@ -5,8 +5,8 @@ extern crate test;
 
 #[cfg(test)]
 mod tests {
-    use chrono_humanize::HumanTime;
     use chrono::Duration;
+    use chrono_humanize::HumanTime;
     use test::Bencher;
 
     #[bench]

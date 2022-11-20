@@ -1,5 +1,4 @@
-use std::time::Duration as StdDuration;
-use std::time::SystemTime;
+use std::time::{Duration as StdDuration, SystemTime};
 
 // use chrono::Duration;
 use chrono_humanize::{HumanTime, Humanize};
